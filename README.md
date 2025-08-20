@@ -13,29 +13,34 @@ This repository contains preprocessing, training, and inference scripts for buil
 
 ---
 
-## ⚙️ Setup
+## ⚡ Quick Setup 
 
-### Step 1: Clone the repository
 ```bash
+# Clone repo
 git clone https://github.com/Avinash-Singh-13/Handwritten-word-recognition.git
 cd Handwritten-word-recognition
-### Step 2: Create and activate a virtual environment
 
-## Linux / macOS
+# Create & activate virtual environment
+# Linux / macOS
+python3 -m venv venv && source venv/bin/activate
+# Windows (PowerShell)
+python -m venv venv; .\venv\Scripts\activate
 
-python3 -m venv venv
-source venv/bin/activate
-
-
-Windows (PowerShell)
-
-python -m venv venv
-.\venv\Scripts\activate
-
-Step 3: Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-📂 Project Structure
+# Preprocess dataset
+python scripts/preprocess.py
+
+# Train the model
+python scripts/train.py
+
+# Run inference on a test image
+python scripts/infer.py --image path/to/image.jpg
+```
+
+### 📂 Project Structure
+``` bash
 Handwritten-word-recognition/
 │── data/                 # Dataset folder (not included in repo)
 │   ├── raw/train/        # Training images (.jpg) + annotations (.json)
@@ -49,21 +54,20 @@ Handwritten-word-recognition/
 │── requirements.txt      # Python dependencies
 │── README.md             # Documentation
 │── .gitignore            # Ignored files (venv, cache, datasets)
+```
 
-🛠️ Usage
+### 🛠️ Usage
+``` bash
 Step 1: Prepare dataset
 
 Create folders:
-
 data/raw/train/
-
 data/raw/test/
 
 Place your dataset into the above folders.
 Each sample must include:
 
 A .jpg image
-
 A .json annotation file
 
 Step 2: Run preprocessing
@@ -74,32 +78,19 @@ python scripts/train.py
 
 Step 4: Run inference on new images
 python scripts/infer.py --image path/to/image.jpg
+```
+### 🤝 Contributing
+``` bash
+1. Fork the repository
 
-📊 Results
+2. Create a new branch
+    git checkout -b feature-name
 
-Training accuracy: (to be added)
+3. Commit your changes
+    git commit -m "Add feature"
 
-Validation accuracy: (to be added)
+4. Push to your branch
+    git push origin feature-name
 
-Example predictions: (add screenshots here)
-
-🤝 Contributing
-
-Fork the repository
-
-Create a new branch
-
-git checkout -b feature-name
-
-
-Commit your changes
-
-git commit -m "Add feature"
-
-
-Push to your branch
-
-git push origin feature-name
-
-
-Open a Pull Request
+5. Open a Pull Request
+```
