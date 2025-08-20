@@ -19,9 +19,9 @@ This repository contains preprocessing, training, and inference scripts for buil
 ```bash
 git clone https://github.com/Avinash-Singh-13/Handwritten-word-recognition.git
 cd Handwritten-word-recognition
-Step 2: Create and activate a virtual environment
+### Step 2: Create and activate a virtual environment
 
-Linux / macOS
+## Linux / macOS
 
 python3 -m venv venv
 source venv/bin/activate
