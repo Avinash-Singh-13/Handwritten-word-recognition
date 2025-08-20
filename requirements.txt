@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+evaluate
+sentencepiece
+accelerate
+tqdm
+opencv-python
+Pillow
