@@ -5,7 +5,6 @@ import cv2
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 import json
-
 # Paths
 DATASET_CSV = r"C:\Users\singh\OneDrive\Desktop\handwritten_ocr\data\raw\A_Z Handwritten Data.csv"
 RAW_TRAIN = "data/raw/train"
