@@ -2,7 +2,6 @@ import os
 import torch
 from PIL import Image
 from transformers import VisionEncoderDecoderModel, TrOCRProcessor
-
 def infer(image_path, model_dir, model_name="microsoft/trocr-small-handwritten"):
     proc = TrOCRProcessor.from_pretrained(model_name)
     model = VisionEncoderDecoderModel.from_pretrained(model_dir)
