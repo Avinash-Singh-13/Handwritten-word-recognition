@@ -6,7 +6,6 @@ def infer(image_path, model_dir, model_name="microsoft/trocr-small-handwritten")
     proc = TrOCRProcessor.from_pretrained(model_name)
     model = VisionEncoderDecoderModel.from_pretrained(model_dir)
     model.to("cuda" if torch.cuda.is_available() else "cpu")
-
     img = Image.open(image_path).convert("RGB")
     pixel_values = proc(img, return_tensors="pt").pixel_values.to(model.device)
     outputs = model.generate(pixel_values)
