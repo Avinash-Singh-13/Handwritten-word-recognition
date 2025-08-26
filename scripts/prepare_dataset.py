@@ -9,7 +9,6 @@ import json
 DATASET_CSV = r"C:\Users\singh\OneDrive\Desktop\handwritten_ocr\data\raw\A_Z Handwritten Data.csv"
 RAW_TRAIN = "data/raw/train"
 RAW_TEST = "data/raw/test"
-
 os.makedirs(RAW_TRAIN, exist_ok=True)
 os.makedirs(RAW_TEST, exist_ok=True)
 
