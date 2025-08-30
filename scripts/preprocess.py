@@ -4,7 +4,7 @@ import pandas as pd
 import cv2 
 from tqdm import tqdm
 
-def process_csv(input_csv, output_dir):
+def process_csv(input_csv, output_dir): 
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"Loading {input_csv}...")
