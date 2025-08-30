@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
-import cv2
+import cv2 
 from tqdm import tqdm
 
 def process_csv(input_csv, output_dir):
