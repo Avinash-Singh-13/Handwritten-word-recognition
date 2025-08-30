@@ -8,7 +8,6 @@ from transformers import (VisionEncoderDecoderModel, TrOCRProcessor,
                           default_data_collator)
 import evaluate 
 from PIL import Image 
-
 @dataclass(frozen=True) 
 class Config:
     data_root = "data/processed"
