@@ -10,7 +10,7 @@ import evaluate
 from PIL import Image 
 @dataclass(frozen=True) 
 class Config:
-    data_root = "data/processed" 
+    data_root = "data/processed"  
     model_name = "microsoft/trocr-small-handwritten"
     epochs = 1
     batch_size = 4
