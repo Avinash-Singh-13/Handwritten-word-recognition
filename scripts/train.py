@@ -9,7 +9,7 @@ from transformers import (VisionEncoderDecoderModel, TrOCRProcessor,
 import evaluate 
 from PIL import Image 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True) 
 class Config:
     data_root = "data/processed"
     model_name = "microsoft/trocr-small-handwritten"
