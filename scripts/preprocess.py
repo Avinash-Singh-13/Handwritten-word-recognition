@@ -12,7 +12,7 @@ def process_csv(input_csv, output_dir):
 
     for i, row in tqdm(enumerate(data), total=len(data)):
         label = row[0]  # first column is the letter index
-        pixels = row[1:].reshape(28, 28).astype(np.uint8)
+        pixels = row[1:].reshape(28, 28).astype(np.uint8) 
 
         label_dir = os.path.join(output_dir, str(label))
         os.makedirs(label_dir, exist_ok=True)
