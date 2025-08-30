@@ -10,7 +10,7 @@ def process_csv(input_csv, output_dir):
     print(f"Loading {input_csv}...") 
     data = pd.read_csv(input_csv).values 
 
-    for i, row in tqdm(enumerate(data), total=len(data)):
+    for i, row in tqdm(enumerate(data), total=len(data)): 
         label = row[0]  # first column is the letter index
         pixels = row[1:].reshape(28, 28).astype(np.uint8) 
 
