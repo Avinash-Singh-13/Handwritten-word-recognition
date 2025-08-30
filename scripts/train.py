@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from torch.utils.data import Dataset
 from transformers import (VisionEncoderDecoderModel, TrOCRProcessor,
                           Seq2SeqTrainer, Seq2SeqTrainingArguments,
-                          default_data_collator)
+                          default_data_collator) 
 import evaluate 
 from PIL import Image 
 @dataclass(frozen=True) 
