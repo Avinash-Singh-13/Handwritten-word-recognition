@@ -7,7 +7,7 @@ from transformers import (VisionEncoderDecoderModel, TrOCRProcessor,
                           Seq2SeqTrainer, Seq2SeqTrainingArguments,
                           default_data_collator)
 import evaluate
-from PIL import Image
+from PIL import Image 
 
 @dataclass(frozen=True)
 class Config:
